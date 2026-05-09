@@ -1,3 +1,8 @@
+# BlueToothBatteryReport add-on for NVDA
+# Copyright (C) 2026 haitun001 <476947039@qq.com>, cary-rowen <manchen_0528@outlook.com>
+# This file is covered by the GNU General Public License.
+# See the file COPYING.txt for more details.
+
 # Build customizations
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
@@ -22,20 +27,20 @@ addon_info = AddonInfo(
 	# Add-on summary/title, usually the user visible name of the add-on
 	# Translators: Summary/title for this add-on
 	# to be shown on installation and add-on information found in add-on store
-	addon_summary=_("BlueToothBatteryReport"),
+	addon_summary=_("Bluetooth Battery Report"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
-	addon_description=_("Use the NVDA+Shift+= hotkey to report Bluetooth device battery levels."),
+	addon_description=_("Use NVDA+Control+Shift+B to report Bluetooth device battery levels."),
 	# version
 	addon_version="0.3",
 	# Author(s)
-	addon_author="codex",
+	addon_author="haitun001 <476947039@qq.com>, cary-rowen <manchen_0528@outlook.com>",
 	# URL for the add-on documentation support
 	addon_url="https://www.zxrjy.net/",
 	# Documentation file name
 	addon_docFileName="readme.html",
 	# Minimum NVDA version supported (e.g. "2019.3.0", minor version is optional)
-	addon_minimumNVDAVersion="2025.1.0",
+	addon_minimumNVDAVersion="2026.1.0",
 	# Last NVDA version supported/tested (e.g. "2024.4.0", ideally more recent than minimum version)
 	addon_lastTestedNVDAVersion="2026.1.0",
 	# Add-on update channel (default is None, denoting stable releases,
@@ -52,7 +57,7 @@ addon_info = AddonInfo(
 # pythonSources = ["addon/globalPlugins/*.py"]
 # For more information on SCons Glob expressions please take a look at:
 # https://scons.org/doc/production/HTML/scons-user/apd.html
-pythonSources: list[str] = ["addon/globalPlugins/*.py"]
+pythonSources: list[str] = ["addon/globalPlugins/blueToothBatteryReport/*.py"]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources: list[str] = pythonSources + ["buildVars.py"]
@@ -63,6 +68,7 @@ i18nSources: list[str] = pythonSources + ["buildVars.py"]
 # or use glob expressions.
 excludedFiles: list[str] = [
 	"globalPlugins/__pycache__/*",
+	"globalPlugins/*/__pycache__/*",
 ]
 
 # Base language for the NVDA add-on

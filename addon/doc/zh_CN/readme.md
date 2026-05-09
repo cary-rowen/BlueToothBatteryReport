@@ -8,7 +8,7 @@
 
 ## 热键
 
-- `NVDA+Shift+=`
+- `NVDA+Control+Shift+B`
 
 ## 播报格式
 

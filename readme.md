@@ -8,13 +8,13 @@ Devices are announced in this order: connected, unknown, disconnected.
 
 ## Hotkey
 
-- `NVDA+Shift+=`
+- `NVDA+Control+Shift+B`
 
 ## Spoken Format
 
 When battery information is available, each device is announced as:
 
-- `device name battery xx%`
+- `device name battery xx percent`
 
 ## Contact
 
