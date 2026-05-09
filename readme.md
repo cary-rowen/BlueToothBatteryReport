@@ -24,5 +24,5 @@ When battery information is available, each device is announced as:
 
 ## Supported NVDA Versions
 
-- Minimum version: `2025.1.0`
+- Minimum version: `2026.1.0`
 - Tested up to: `2026.1.0`
